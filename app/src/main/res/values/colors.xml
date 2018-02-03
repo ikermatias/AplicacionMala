@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#414141</color>
+    <color name="cupos_blue">#00A5BE</color>
+    <color name="cupos_blue_trasluscent">#CC00A5BE</color>
+    <color name="cupos_dark_gray">#B9B9B9</color>
+    <color name="cupos_soft_gray">#F6F6F6</color>
+    <color name="cupos_brown">#504046</color>
+    <color name="area">#4100a5be</color>
+</resources>

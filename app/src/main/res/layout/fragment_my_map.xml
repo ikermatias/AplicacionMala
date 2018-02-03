@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/place_autocomplete_fragment"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/linear_from_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/place_autocomplete_fragment"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switch_from_to"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:rotation="90"
+            android:theme="@style/SwitchCompatTheme" />
+
+        <TextView
+            android:id="@+id/txt_from_to_location"
+            style="@style/TextMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="Destino Icesi" />
+
+        <Button
+            android:id="@+id/btn_hour"
+            style="@style/TextMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/hour_map" />
+
+        <Button
+            android:id="@+id/btn_date"
+            style="@style/TextMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/date_map" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear_from_to">
+
+        <TextView
+            android:id="@+id/txt_quota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_cancel_route"
+            android:layout_alignBottom="@+id/btn_cancel_route"
+            android:background="@color/cupos_blue"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/current_quota"
+            android:textColor="#FFFF" />
+
+        <FrameLayout
+            android:id="@+id/map_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_quota">
+
+        </FrameLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:backgroundTint="@color/cupos_blue" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_cancel_route"
+        style="@style/RoundedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/text_cancel_booking" />
+
+</RelativeLayout>

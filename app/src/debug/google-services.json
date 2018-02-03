@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "935217639265",
+    "firebase_url": "https://cuposicesi-2c4bd.firebaseio.com",
+    "project_id": "cuposicesi-2c4bd",
+    "storage_bucket": "cuposicesi-2c4bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935217639265:android:816d386950f3ace8",
+        "android_client_info": {
+          "package_name": "com.angular.gerardosuarez.carpoolingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935217639265-f2ojno1kfpp588miv4qeup48pm3meq2c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQJti8JJ9_cj0WbZ3Sb5oQ0qR3SI2VjH8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
